@@ -9,7 +9,7 @@
   
           <nav aria-label="breadcrumb">
             <ol class="breadcrumb bg-transparent justify-content-center">
-              <li class="breadcrumb-item"><a routerLink="/">Home</a></li>
+              <li class="breadcrumb-item"><a routerLink="/home">Home</a></li>
               <li class="breadcrumb-item active" aria-current="page">Product Single</li>
             </ol>
           </nav>
@@ -70,7 +70,7 @@
             <form class="cart" action="#" method="post">
               <div class="quantity d-flex align-items-center">
                 <input type="number" id="#" class="input-text qty text form-control w-25 mr-3" step="1" min="1" max="9" name="quantity" value="1" title="Qty" size="4" >
-                <a href="#" class="btn btn-main btn-small">Add to cart</a>
+                <a routerLink="/cart" class="btn btn-main btn-small">Add to cart</a>
               </div>
             </form>
   

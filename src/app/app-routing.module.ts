@@ -4,6 +4,7 @@ import { AddressComponent } from './address/address.component';
 import { CartComponent } from './cart/cart.component';
 import { CheckoutComponent } from './checkout/checkout.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
+import { EditAddressComponent } from './edit-address/edit-address.component';
 import { ForgotPasswordComponent } from './forgot-password/forgot-password.component';
 import { HomeComponent } from './home/home.component';
 import { LoginComponent } from './login/login.component';
@@ -14,6 +15,7 @@ import { ShopComponent } from './shop/shop.component';
 import { SignupComponent } from './signup/signup.component';
 
 const routes: Routes = [
+  { path: '', component: HomeComponent },
   { path: 'home', component: HomeComponent },
   { path: 'shop', component: ShopComponent },
   { path: 'product-single', component: ProductsingleComponent },
@@ -22,6 +24,7 @@ const routes: Routes = [
   { path: 'dashboard-client', component: DashboardComponent },
   { path: 'orders', component: OrdersComponent },
   { path: 'address', component: AddressComponent },
+  { path: 'edit-address', component: EditAddressComponent },
   { path: 'profile-details', component: ProfileDetailsComponent },
   { path: 'login', component: LoginComponent },
   { path: 'signup', component: SignupComponent },
