@@ -1,0 +1,93 @@
+<div id="sidebar">
+    
+   <a href="#" id="titulomodulo"> <i class="bi bi-speedometer2"></i>Dashboard</a> 
+
+   <a 
+   class="navbar-brand p-3"
+   (click)="collapse.toggle()"
+   [attr.aria-expanded]="!isCollapsed"
+   aria-controls="collapseExample">
+   Gestión de Usuario
+</a>
+<div>
+ <div #collapse="ngbCollapse" [(ngbCollapse)]="isCollapsed" [horizontal]="true" >
+  
+     <ul>
+       <li>
+         Hola
+       </li>
+       <li>
+         Hola
+       </li>
+     </ul>
+   
+ </div>
+</div>
+
+  <a 
+      class="navbar-brand p-3"
+      (click)="collapse.toggle()"
+      [attr.aria-expanded]="!isCollapsed"
+      aria-controls="collapseExample">
+      Ventas
+</a>
+  <div>
+    <div #collapse="ngbCollapse" [(ngbCollapse)]="isCollapsed" [horizontal]="true" >
+     
+        <ul>
+          <li>
+            Hola
+          </li>
+          <li>
+            Hola
+          </li>
+        </ul>
+      
+    </div>
+  </div>
+
+  <a 
+      class="navbar-brand p-3"
+      (click)="collapse.toggle()"
+      [attr.aria-expanded]="!isCollapsed"
+      aria-controls="collapseExample">
+      Envios
+</a>
+  <div>
+    <div #collapse="ngbCollapse" [(ngbCollapse)]="isCollapsed" [horizontal]="true" >
+     
+        <ul>
+          <li>
+            Hola
+          </li>
+          <li>
+            Hola
+          </li>
+        </ul>
+      
+    </div>
+  </div>
+
+  <a 
+      class="navbar-brand p-3"
+      (click)="collapse.toggle()"
+      [attr.aria-expanded]="!isCollapsed"
+      aria-controls="collapseExample">
+      Fidelización
+</a>
+  <div>
+    <div #collapse="ngbCollapse" [(ngbCollapse)]="isCollapsed" [horizontal]="true" >
+     
+        <ul>
+          <li>
+            Hola
+          </li>
+          <li>
+            Hola
+          </li>
+        </ul>
+      
+    </div>
+  </div>
+    
+  </div>
