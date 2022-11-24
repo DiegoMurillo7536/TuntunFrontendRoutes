@@ -1,29 +1,58 @@
-<div id="sidebar">
-    
-   <a href="#" id="titulomodulo"> <i class="bi bi-speedometer2"></i>Dashboard</a> 
-
-   <h3>Accordion</h3>
+<div id="sidebar">  
+   <a href="#" class="nav-brand" id="dashboard-sidebard"> <i class="bi bi-speedometer2"></i>Dashboard</a>
 <hr>
-<ngb-accordion #acc="ngbAccordion" (panelChange)=nomodificar($event)>
-    <ngb-panel id="panel1" title="Tema1">
-        <ng-template ngbPanelContent>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis ratione eaque voluptatibus error animi quaerat delectus maiores saepe, nemo, inventore nobis omnis, consequuntur asperiores odit non aliquid quo? Maiores, nam.
-        </ng-template>
-    </ngb-panel>
-    <ngb-panel id="panel2">
-        <ng-template ngbPanelTitle>
-            <h1> <span>Tema</span> 2</h1>
-        </ng-template>
-        <ng-template ngbPanelContent>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis ratione eaque voluptatibus error animi quaerat delectus maiores saepe, nemo, inventore nobis omnis, consequuntur asperiores odit non aliquid quo? Maiores, nam.
-        </ng-template>
-    </ngb-panel>
-    <ngb-panel id="panel3" title="Tema3" [disabled]="false">
-        <ng-template ngbPanelContent>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis ratione eaque voluptatibus error animi quaerat delectus maiores saepe, nemo, inventore nobis omnis, consequuntur asperiores odit non aliquid quo? Maiores, nam.
-        </ng-template>
-    </ngb-panel>
-</ngb-accordion>
+   <a class="nav-brand tituloitems"  data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+    <i class="bi bi-person"></i> Usuario
+    </a>
+    
+  
+  <div class="collapse" id="collapseExample">
+    <ul>
+        <li>Usuarios</li>
+        <li>Autoridades</li>
+
+    </ul>
+  </div>
+  <br>
+<hr>
+  <a class="nav-brand tituloitems"  data-toggle="collapse" href="#collapseExample2" role="button" aria-expanded="false" aria-controls="collapseExample">
+    <i class="bi bi-shop"></i> Ventas
+   </a>
+   
+ 
+ <div class="collapse" id="collapseExample2">
+   <ul>
+       <li>Productos</li>
+       <li>Detalle de los Productos</li>
+       <li>Ventas</li>
+       <li>Detalle de las ventas</li>
+       <li>Métodos de pago</li>
+   </ul>
+ </div>
+
+ <br>
+ <hr>
+  <a class="nav-brand tituloitems"  data-toggle="collapse" href="#collapseExample3" role="button" aria-expanded="false" aria-controls="collapseExample">
+    <i class="bi bi-truck"></i> Envios
+   </a>
+   
+ 
+ <div class="collapse" id="collapseExample3">
+   <ul>
+       <li>Envios</li>
+       <li>Compañías de envio</li>
+       <li>Devoluciones</li>
+       <li>Pedidos</li>
+   </ul>
+ </div>
+
+ 
+
+ 
+
+
+  
+
 
     
 </div>

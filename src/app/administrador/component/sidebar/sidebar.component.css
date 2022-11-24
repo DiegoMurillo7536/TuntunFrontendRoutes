@@ -3,15 +3,21 @@
     padding-bottom:40% ;
     padding-top: 2%;
     float: left;
-    width: 10.5%;
+    width: 12%;
+    
     
 }
-#titulomodulo{
+#dashboard-sidebard{ 
     
-    margin-left: 15%;
-    font-size: 0.9em;
+    font-size: 1.2em;
+    margin-left: 10%;
     
-    padding: 0.5%;
+}
+.tituloitems{
+    font-size: 1.2em;
+    width: 200%;
+    
+    margin-left: 9%;
 }
 .items{
     margin-left: 30%;
@@ -24,4 +30,11 @@
 span{
     color:green;
     font-size:25px;
+}
+
+#acordion{
+    border: solid;
+}
+.acordion-slide{
+    border: solid green;
 }
