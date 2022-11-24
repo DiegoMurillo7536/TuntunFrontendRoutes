@@ -3,9 +3,25 @@
     padding-bottom:40% ;
     padding-top: 2%;
     float: left;
+    width: 10.5%;
+    
 }
 #titulomodulo{
     
     margin-left: 15%;
-    font-size: 1.05em;
+    font-size: 0.9em;
+    
+    padding: 0.5%;
+}
+.items{
+    margin-left: 30%;
+    margin-right: 5%;  
+}
+
+.acordeon{
+    font-size: 15px;
+}
+span{
+    color:green;
+    font-size:25px;
 }

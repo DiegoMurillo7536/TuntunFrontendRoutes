@@ -2,92 +2,28 @@
     
    <a href="#" id="titulomodulo"> <i class="bi bi-speedometer2"></i>Dashboard</a> 
 
-   <a 
-   class="navbar-brand p-3"
-   (click)="collapse.toggle()"
-   [attr.aria-expanded]="!isCollapsed"
-   aria-controls="collapseExample">
-   Gestión de Usuario
-</a>
-<div>
- <div #collapse="ngbCollapse" [(ngbCollapse)]="isCollapsed" [horizontal]="true" >
-  
-     <ul>
-       <li>
-         Hola
-       </li>
-       <li>
-         Hola
-       </li>
-     </ul>
-   
- </div>
-</div>
+   <h3>Accordion</h3>
+<hr>
+<ngb-accordion #acc="ngbAccordion" (panelChange)=nomodificar($event)>
+    <ngb-panel id="panel1" title="Tema1">
+        <ng-template ngbPanelContent>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis ratione eaque voluptatibus error animi quaerat delectus maiores saepe, nemo, inventore nobis omnis, consequuntur asperiores odit non aliquid quo? Maiores, nam.
+        </ng-template>
+    </ngb-panel>
+    <ngb-panel id="panel2">
+        <ng-template ngbPanelTitle>
+            <h1> <span>Tema</span> 2</h1>
+        </ng-template>
+        <ng-template ngbPanelContent>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis ratione eaque voluptatibus error animi quaerat delectus maiores saepe, nemo, inventore nobis omnis, consequuntur asperiores odit non aliquid quo? Maiores, nam.
+        </ng-template>
+    </ngb-panel>
+    <ngb-panel id="panel3" title="Tema3" [disabled]="false">
+        <ng-template ngbPanelContent>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis ratione eaque voluptatibus error animi quaerat delectus maiores saepe, nemo, inventore nobis omnis, consequuntur asperiores odit non aliquid quo? Maiores, nam.
+        </ng-template>
+    </ngb-panel>
+</ngb-accordion>
 
-  <a 
-      class="navbar-brand p-3"
-      (click)="collapse.toggle()"
-      [attr.aria-expanded]="!isCollapsed"
-      aria-controls="collapseExample">
-      Ventas
-</a>
-  <div>
-    <div #collapse="ngbCollapse" [(ngbCollapse)]="isCollapsed" [horizontal]="true" >
-     
-        <ul>
-          <li>
-            Hola
-          </li>
-          <li>
-            Hola
-          </li>
-        </ul>
-      
-    </div>
-  </div>
-
-  <a 
-      class="navbar-brand p-3"
-      (click)="collapse.toggle()"
-      [attr.aria-expanded]="!isCollapsed"
-      aria-controls="collapseExample">
-      Envios
-</a>
-  <div>
-    <div #collapse="ngbCollapse" [(ngbCollapse)]="isCollapsed" [horizontal]="true" >
-     
-        <ul>
-          <li>
-            Hola
-          </li>
-          <li>
-            Hola
-          </li>
-        </ul>
-      
-    </div>
-  </div>
-
-  <a 
-      class="navbar-brand p-3"
-      (click)="collapse.toggle()"
-      [attr.aria-expanded]="!isCollapsed"
-      aria-controls="collapseExample">
-      Fidelización
-</a>
-  <div>
-    <div #collapse="ngbCollapse" [(ngbCollapse)]="isCollapsed" [horizontal]="true" >
-     
-        <ul>
-          <li>
-            Hola
-          </li>
-          <li>
-            Hola
-          </li>
-        </ul>
-      
-    </div>
-  </div>
     
-  </div>
+</div>
