@@ -1,0 +1,40 @@
+#sidebar{
+    padding-right: 5%;
+    padding-bottom:40% ;
+    padding-top: 2%;
+    float: left;
+    width: 12%;
+    
+    
+}
+#dashboard-sidebard{ 
+    
+    font-size: 1.2em;
+    margin-left: 10%;
+    
+}
+.tituloitems{
+    font-size: 1.2em;
+    width: 200%;
+    
+    margin-left: 9%;
+}
+.items{
+    margin-left: 30%;
+    margin-right: 5%;  
+}
+
+.acordeon{
+    font-size: 15px;
+}
+span{
+    color:green;
+    font-size:25px;
+}
+
+#acordion{
+    border: solid;
+}
+.acordion-slide{
+    border: solid green;
+}
