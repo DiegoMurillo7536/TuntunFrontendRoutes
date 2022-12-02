@@ -2,8 +2,8 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap'; 
 
-import { AppComponent } from './app.component';
-import { HeaderComponent } from './client/header/Cliente/header.component'; 
+/* Componentes del cliente */
+import { HeaderComponent } from './client/header/header.component'; 
 import { FooterComponent } from './client/footer/footer.component'; 
 import { HomeComponent } from './client/home/home.component'; 
 import { ProductsingleComponent } from './client/productsingle/productsingle.component'; 
@@ -19,10 +19,16 @@ import { ProfileDetailsComponent } from './client/profile-details/profile-detail
 import { AddressComponent } from './client/address/address.component'; 
 import { EditAddressComponent } from './client/edit-address/edit-address.component'; 
 import { SlickCarouselModule } from 'ngx-slick-carousel'; 
-import { AppRoutingModule } from './app-routing.module';   
-import { HeaderAdminComponent } from './administrador/component/header/header.component'; 
-import { DashboardAdminComponent } from './administrador/dashboard/dashboard.component'; 
-import { SidebarComponent } from './administrador/component/sidebar/sidebar.component';
+import { IndexComponent } from './client/index/index.component';
+
+/* Componentes del Administrador */
+import { HeaderAdminComponent } from './admin/component/header/header.component';
+import { DashboardAdminComponent } from './admin/dashboard/dashboard.component';
+import { SidebarComponent } from './admin/component/sidebar/sidebar.component';
+
+/* Componente de rutas y la aplicación */
+import { AppComponent } from './app.component';
+import { AppRoutingModule } from './app-routing.module'; 
 
 @NgModule({
   declarations: [
@@ -44,7 +50,8 @@ import { SidebarComponent } from './administrador/component/sidebar/sidebar.comp
     EditAddressComponent,
     HeaderAdminComponent,
     DashboardAdminComponent,
-    SidebarComponent
+    SidebarComponent,
+    IndexComponent
   ],
   imports: [
     BrowserModule,

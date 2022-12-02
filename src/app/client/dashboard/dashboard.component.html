@@ -1,3 +1,4 @@
+<app-header></app-header>
 <section class="page-header">
     <div class="overly"></div>   
     <div class="container">
@@ -9,7 +10,7 @@
   
           <nav aria-label="breadcrumb">
             <ol class="breadcrumb bg-transparent justify-content-center">
-              <li class="breadcrumb-item"><a routerLink="/">Home</a></li>
+              <li class="breadcrumb-item"><a routerLink="../home">Home</a></li>
               <li class="breadcrumb-item active" aria-current="page">Dashboard</li>
             </ol>
           </nav>
@@ -25,27 +26,28 @@
       <div class="row">
         <div class="col-12 col-md-5 col-sm-12 col-lg-3">
           <div class="nav flex-column nav-pills">
-            <a class="nav-link active" routerLink="/dashboard">Dashboard</a>
+            <a class="nav-link active" routerLink="../dashboard">Dashboard</a>
           </div>
           <div class="nav flex-column nav-pills">
-            <a class="nav-link" routerLink="/orders" >Orders</a>
+            <a class="nav-link" routerLink="../orders" >Orders</a>
           </div>
           <div class="nav flex-column nav-pills">
-            <a class="nav-link" routerLink="/address" >Address</a>
+            <a class="nav-link" routerLink="../address" >Address</a>
           </div>
           <div class="nav flex-column nav-pills">
-            <a class="nav-link" routerLink="/profile-details" >Account</a>
+            <a class="nav-link" routerLink="../profile-details" >Account</a>
           </div>
           <div class="nav flex-column nav-pills">
-            <a class="nav-link" routerLink="/">Log Out</a>
+            <a class="nav-link" routerLink="../login">Log Out</a>
           </div>
         </div>
   
   
         <div class="col-12 col-md-7 col-sm-12 col-lg-9">
-          <p>Hello Therichpost (not Therichpost? <a routerLink="/">Log out</a>)</p>
+          <p>Hello Therichpost (not Therichpost? <a routerLink="../login">Log out</a>)</p>
           From your account dashboard you can view your <a href="#">recent orders</a>, manage your <a href="#">shipping and billing addresses</a> and <a href="#">edit your password and account details</a>.
         </div>
       </div>
     </div>
   </section>
+<app-footer></app-footer>
