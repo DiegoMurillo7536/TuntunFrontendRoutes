@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { DashboardAdminComponent } from './admin/dashboard/dashboard.component';
 import { AddressComponent } from './client/address/address.component';
 import { CartComponent } from './client/cart/cart.component'; 
 import { CheckoutComponent } from './client/checkout/checkout.component'; 
@@ -33,7 +34,8 @@ const routes: Routes = [
     { path: 'signup', component: SignupComponent },
     { path: 'forgot-password', component: ForgotPasswordComponent },
     ] },
-    
+    {path: 'admin',
+     children: [{ path: 'dashboard', component: DashboardAdminComponent }]},
     { path: '**', redirectTo: '/client/home', pathMatch: 'full' },
   
   
